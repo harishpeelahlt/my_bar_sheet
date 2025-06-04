@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mybarsheet/core/constants/appColors.dart';
+import 'package:mybarsheet/presentation/screens/home_screen.dart';
 import 'package:mybarsheet/presentation/widgets/bottomTab.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -54,7 +55,7 @@ class LoginScreen extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushReplacement(
                         context,
-                        MaterialPageRoute(builder: (_) => BottomTab()),
+                        MaterialPageRoute(builder: (_) => HomeScreen()),
                       );
                     },
                     child: const Text('Login', style: TextStyle(fontSize: 16)),
